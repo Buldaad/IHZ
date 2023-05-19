@@ -1,7 +1,7 @@
 from random import *
 from time import sleep
 KMN = ['Камень' , 'Ножницы' , 'Бумагу']
-OR = ['О' , 'Р']
+ORgame = ['О' , 'Р']
 KN = [1,2,3,4,5,6]
 
 while True:
@@ -29,7 +29,7 @@ while True:
 
 
 
-    if game == '2':
+    elif game == '2':
         print('играем в Монетку')
         pl = input('Орёл - 1 , Решка - 2 :')
         if pl == '1':
@@ -50,7 +50,7 @@ while True:
 
 
 
-    if game == '3':
+    elif game == '3':
         print('играем в Класик Настолку')
         mestopl = 0
         mestoan = 0
@@ -172,7 +172,7 @@ while True:
             print('Ты проиграл')
         elif mestopl > Nklet:
             print('Ты Победил')
-    if game == '4':
+    elif game == '4':
         print('играем в UNO')
         
         def give_card(nach):
